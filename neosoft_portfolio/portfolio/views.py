@@ -42,8 +42,6 @@ def subscribe_feed(request,data=None):
     email_unicode=None
     email_list = []
     duplicate = None
-    import pdb;pdb.set_trace()
-
     if request.method == 'POST':
         email_unicode = request.POST.get("email")
         name = request.POST.get("firstName") 
