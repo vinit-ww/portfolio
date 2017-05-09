@@ -1,0 +1,34 @@
+<div class="form-group">
+    <form action="{% url 'test' %}" method="POST" onsubmit="return check_the_box()">
+    	{% csrf_token %}
+        <label for="InputEmail1">email</label>
+        <input name="email" type="text" required placeholder="Your Email"  class="form-control" aria-describedby="emailHelp">
+        <label for="InputName">name</label>
+        <input name="firstName" type="text" required placeholder="Your Name" class="form-control" aria-describedby="emailHelp">
+        <p>
+            <a href="#">I've read and agree to the Terms of Service </a>
+            <input id="chx" type="checkbox">
+        </p>
+        <button type="submit" >Newsletter Signup</button>
+        <p>
+            <span style="display: none" id="pls"> Please review and tick the Terms of Service box</span>
+        </p>	
+    </form>
+</div>
+
+<script type="text/javascript">  
+    var box = document.getElementById("chx");
+    var alrt = document.getElementById("pls");
+
+function check_the_box(){  
+    if(!box.checked) {
+        alrt.setAttribute("style","display: inline");
+            return false
+}
+else {  
+    return true
+}
+}
+</script>  
+
+  

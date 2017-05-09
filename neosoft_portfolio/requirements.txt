@@ -1,0 +1,11 @@
+Django==1.9.10
+Pillow==4.1.1
+argparse==1.2.1
+django-admin-sortable==2.1
+django-ckeditor==5.2.2
+django-mailgun==0.9.1
+feedparser==5.2.1
+olefile==0.44
+requests==2.13.0
+six==1.10.0
+wsgiref==0.1.2
