@@ -8,7 +8,7 @@ class ArticlesFeed(Feed):
   description_template = "feed/articles.html"
 
   def items(self):
-      return Project.objects.order_by('-created_date')[:2]
+      return Project.objects.order_by('-created_date')[:5]
 
   def item_title(self, item):
       return item.name
