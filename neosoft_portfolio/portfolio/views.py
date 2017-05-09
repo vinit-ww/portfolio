@@ -41,7 +41,6 @@ class ProjectDetailsView(View):
 def subscribe_feed(request,data=None):
     email_unicode=None
     email_list = []
-    duplicate = None
     if request.method == 'POST':
         email_unicode = request.POST.get("email")
         name = request.POST.get("firstName") 
