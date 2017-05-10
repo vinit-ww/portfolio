@@ -149,7 +149,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 
 # Optional SMTP authentication information for EMAIL_HOST.
-EMAIL_HOST_USER = 'vinit.unperfect@gmail.com'
-EMAIL_HOST_PASSWORD = 'vinit@012345'
+EMAIL_HOST_USER = 'your_gmail_id'
+EMAIL_HOST_PASSWORD = 'your_password'
 EMAIL_USE_TLS = True
 
